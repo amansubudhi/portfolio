@@ -5,6 +5,7 @@ const nextConfig = {
             "api.microlink.io", // Microlink Image Preview
         ],
     },
+    transpilePackages: ['lucide-react']
 };
 
 export default nextConfig;
