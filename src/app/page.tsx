@@ -5,7 +5,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 // import GitHubIcon from "../../public/assets/images/github.svg"
 const skills = [
   'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js',
-  'Express', 'MongoDB', 'SQL', 'PostGreSQL', 'Prisma', 'REST APIs',
+  'Express', 'MongoDB', 'SQL', 'PostgreSQL', 'Prisma', 'REST APIs',
   'HTML5', 'CSS3', 'Tailwind CSS', 'Git', 'Docker'
 ]
 
@@ -54,24 +54,26 @@ export default function Home() {
           <h3 className="text-xl font-semibold">Skills</h3>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (
-              <Badge key={skill} variant="secondary" className="text-sm py-1 px-3 rounded-full">{skill}</Badge>
+              <Badge key={skill} variant="secondary" className="text-sm py-1 px-3 rounded-full bg-slate-200">{skill}</Badge>
             ))}
           </div>
         </section>
 
         <section className="projects space-y-6">
           <h3 className="text-xl font-semibold">Projects</h3>
-          <div className="space-y-4">
-            <p className="text-muted-foreground text-sm max-w-3xl text-left">
-              <LinkPreview
-                url="https://ui.aceternity.com"
-                className="bg-clip-text text-lg font-medium"
-              >
-                PayTM
-              </LinkPreview>{" "}
-              wallet app
-            </p>
-            <p className="text-muted-foreground text-sm text-left">
+          <ul className="space-y-4">
+            <li>
+              <p className="text-muted-foreground text-sm max-w-3xl text-left">
+                <LinkPreview
+                  url="https://zenpay.amansubudhi.tech"
+                  className="bg-clip-text text-lg font-medium"
+                >
+                  Zenpay
+                </LinkPreview>{" "}
+                wallet app
+              </p>
+            </li>
+            {/* <p className="text-muted-foreground text-sm text-left">
               <LinkPreview
                 url="https://ui.aceternity.com"
                 className="bg-clip-text text-lg font-medium"
@@ -79,8 +81,8 @@ export default function Home() {
                 Blogspot
               </LinkPreview>{" "}
               blogging app
-            </p>
-          </div>
+            </p> */}
+          </ul>
         </section>
       </main>
     </div>
