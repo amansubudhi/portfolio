@@ -2,10 +2,11 @@
 const nextConfig = {
     images: {
         domains: [
-            "api.microlink.io", // Microlink Image Preview
+            "api.microlink.io",
+            'images.unsplash.com' // Microlink Image Preview
         ],
     },
-    transpilePackages: ['lucide-react']
+    transpilePackages: ['lucide-react'],
 };
 
 export default nextConfig;
